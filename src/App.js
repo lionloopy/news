@@ -1,9 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-import logo from "./logo.png";
 import photo from "./photo.jpg";
 import code from "./code.jpg";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Navigation, Pagination, Autoplay } from "swiper";
+import "../node_modules/swiper/swiper.css";
 
+SwiperCore.use([Navigation, Pagination, Autoplay]);
 function App() {
   const onMailHandler = () => {
     window.location.href = "mailto:yunseo4396@naver.com";
@@ -14,26 +17,45 @@ function App() {
       "https://bow-starfish-ba2.notion.site/593dcc0888ee43278f972b53545356cf";
   };
 
+  const onGitHandler = () => {
+    window.location.href = "https://github.com/lionloopy";
+  };
+
   const today = new Date();
   const dateString = today.toLocaleDateString();
+
   return (
-    <div style={{ width: "100%" }}>
+    <StWrap>
       <StHeader>
-        <StUl>
-          <li>주니어</li>
-          <li>프론트엔드</li>
-          <li>개발자</li>
-        </StUl>
         <StUl>
           <StLi onClick={onNotionHandler}>구독하기</StLi>
           <StLi onClick={onMailHandler}>채용하기</StLi>
         </StUl>
       </StHeader>
       <StNav>
-        <StImg src={logo} />
-        <StNews>뉴스</StNews>
-        <StDate>{dateString}</StDate>
+        <StNews>THE FRONTEND NEWS</StNews>
       </StNav>
+      <StLine>
+        <StDate onClick={onGitHandler}>www.github.com</StDate>
+        <StSlide>
+          <StNotice>속보</StNotice>
+          <Swiper
+            className="banner"
+            spaceBetween={50}
+            slidesPerView={1}
+            observer={true}
+            observeParents={true}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
+            direction="vertical"
+          >
+            <SwiperSlide>남궁윤서 "코딩이 제일 재밌었다" 발언</SwiperSlide>
+            <SwiperSlide>떠오르는 프론트엔드 개발자 과연 누구?</SwiperSlide>
+            <SwiperSlide>남궁윤서 부트캠프에서도 높은 평가 받아...</SwiperSlide>
+          </Swiper>
+        </StSlide>
+        <StDate>{dateString}</StDate>
+      </StLine>
+
       <StBody>
         <StTitle>
           "div도 몰랐어요"... 비전공자에서 코드 40,000줄을 짜는 리더가 되다.
@@ -97,28 +119,37 @@ function App() {
         </StSection>
       </StBody>
       <StFooter>footer</StFooter>
-    </div>
+    </StWrap>
   );
 }
 
 export default App;
 
-const StHeader = styled.div`
+const StWrap = styled.div`
   width: 100%;
+  background-color: #fff;
+`;
+
+const StHeader = styled.div`
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 2em;
   height: 2em;
-  background-color: #2367d7;
+  background-color: rgb(237, 43, 42);
   display: flex;
   justify-content: space-between;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 `;
 
 const StUl = styled.ul`
   display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
   list-style: none;
   gap: 10px;
   margin: auto 0;
   font-size: 12px;
-  color: lightgray;
+  color: #fff;
   margin-right: 1.5em;
 `;
 
@@ -130,30 +161,50 @@ const StLi = styled.li`
 `;
 
 const StNav = styled.div`
-  width: 100%;
-  height: 7em;
-  border-bottom: 2px solid #2367d7;
+  width: 90%;
+  margin: 0 auto;
+  height: 8.5em;
   display: flex;
   justify-content: space-between;
   line-height: 7em;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-`;
-
-const StImg = styled.img`
-  width: 160px;
-  height: 80px;
-  margin: auto 0;
 `;
 
 const StNews = styled.div`
-  font-size: 40px;
-  color: #2367d7;
+  font-size: 70px;
+  color: #2e3840;
+`;
+
+const StLine = styled.div`
+  width: 90%;
+  margin: 0 auto;
+  border: 2px solid #f15a59;
+  height: 3em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  line-height: 3em;
 `;
 
 const StDate = styled.div`
-  font-size: 15px;
-  margin-top: 2em;
-  margin-right: 2em;
+  font-size: 18px;
+  margin-right: 1em;
+  margin-left: 1em;
+  cursor: pointer;
+`;
+
+const StSlide = styled.div`
+  font-size: 18px;
+  font-weight: 900;
+  margin-right: 1em;
+  margin-left: 1em;
+  cursor: pointer;
+  display: flex;
+`;
+
+const StNotice = styled.div`
+  color: red;
+  margin-right: 10px;
+  font-weight: 900;
 `;
 
 const StBody = styled.div`
