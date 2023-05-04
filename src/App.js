@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import photo from "./photo.jpg";
 import code from "./code.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Pagination, Autoplay } from "swiper";
@@ -60,11 +59,6 @@ function App() {
         <StTitle>
           "div도 몰랐어요"... 비전공자에서 코드 40,000줄을 짜는 리더가 되다.
         </StTitle>
-        {/* 
-        <StWriter>
-          <StPhoto src={photo} />
-          <div>남궁윤서 기자</div>
-        </StWriter> */}
         <StSection>
           <StBox>
             <StMainImg src={code} />
@@ -244,20 +238,6 @@ const StTitle = styled.div`
   letter-spacing: 1px;
 `;
 
-const StWriter = styled.div`
-  font-size: 15px;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  margin-top: 0.5em;
-`;
-
-const StPhoto = styled.img`
-  width: 35px;
-  height: 35px;
-  border-radius: 50px;
-`;
-
 const StSection = styled.div`
   width: 100%;
   display: flex;
@@ -267,8 +247,6 @@ const StSection = styled.div`
 const StMainImg = styled.img`
   width: 100%;
   margin: 0 auto;
-  /* border: 2px solid gray;
-  border-radius: 10px; */
 `;
 
 const StBox = styled.div`
