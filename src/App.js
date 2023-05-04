@@ -60,56 +60,73 @@ function App() {
         <StTitle>
           "div도 몰랐어요"... 비전공자에서 코드 40,000줄을 짜는 리더가 되다.
         </StTitle>
+        {/* 
         <StWriter>
           <StPhoto src={photo} />
           <div>남궁윤서 기자</div>
-        </StWriter>
+        </StWriter> */}
         <StSection>
-          <StMainImg src={code} />
+          <StBox>
+            <StMainImg src={code} />
+          </StBox>
           <StContent>
-            프론트엔드 개발자를 꿈꾸는 남궁윤서 수료생은 인터뷰에서 "처음엔
-            div가 무엇인지도 몰랐다. 꾸준한 성실함과 노력이 나를 여기까지 오게
-            만들었다."라고 말했습니다.
             <StContents>
-              <StQ>처음에 어떻게 개발을 접하게 되었나요?</StQ>
+              <StQ>[ 간단한 소개부터 부탁드립니다 ]</StQ>
               <StA>
-                코로나로 꿈을 잃고, 진로에 대해 고민하던 중 진로에 대한 폭을
-                넓히고 더 가까이서 접할 수 없을까 라는 생각에 교육업계에
-                사무직으로 취직을 하게 되었습니다.
-                <br /> 전 회사의 교육 관련 과목 중 웹퍼블리셔 양성 과정이
-                있었고, 회사의 지원으로 무료로 수업을 듣게 되며 개발을 접하게
+                안녕하세요. <br />
+                먼저 이렇게 인터뷰를 요청해주셔서 감사합니다. 저는 현재
+                프론트엔드 개발자를 꿈꾸는 남궁윤서입니다.
+                <br />
+                일단 해보자! 라는 마인드로 개발을 배우다 보니 빠른 습득력이란
+                타이틀을 가지게 된 것 같습니다.
+              </StA>
+              <StQ>
+                [ 개발자가 되기로 한 이유에 대해 말씀해주실 수 있을까요? ]
+              </StQ>
+              <StA>
+                어느 날 카페에서 해커처럼 노트북으로 무언가 작업하는 사람을 보게
                 되었습니다.
+                <br /> 알 수 없는 영어들이 가득한데, 그 영어 몇 글자를 고치면
+                화면이 바뀌는 것을 보았습니다.
+                <br /> 저도 만들기를 좋아하고, 그게 누군가에게 도움이 되는 것에
+                행복을 느끼는 사람으로서 '컴퓨터로 나도 무언가 만들어볼 수
+                있겠구나!' 라는 생각을 가지게 되었습니다.
+                <br />
+                그렇게 개발자라는 꿈에 더 다가가기 위해 교육업계에 사무직으로
+                취직하여 가장 가까이서 개발이라는 것을 접해보게 되었습니다. 막상
+                접해보니 너무 재밌어서 그 때부터 개발자가 되기로 결심했습니다.
               </StA>
-              <StQ>비전공자인데 코딩의 첫인상이 어떠셨나요?</StQ>
+              <StQ>
+                [ 개발자로서 본인의 강점과 근거가 되는 경험을 말씀해주실 수
+                있을까요? ]
+              </StQ>
               <StA>
-                일단 너무너무 재밌었습니다. 내가 짜는 코드로 웹페이지를 바꿀 수
-                있고, 내가 만든 버튼을 유저가 클릭하면 기능이 작동한 다는 것이
-                너무 신기했습니다.
-                <br /> 그렇게 처음부터 저는 코딩의 세계에 푹 빠져버렸습니다.
+                제가 생각하는 개발자로서 제 강점은 습득력이 엄청나게 빠르다는
+                것과 그것을 내 것으로 만드는 것에 재미를 느낀다는 것 입니다.
+                <br /> 부트캠프 과정을 진행했을 당시 저는 비전공자로
+                들어갔습니다. 하지만 엄청나게 빠른 습득력으로 중간과제를 1등으로
+                제출하는 놀라운 성장력을 보였습니다.
+                <br /> 또한 습득력뿐만 아니라 손도 빨라서 기한 내에 제출하지
+                못했던 적이 없습니다. '즐기는 사람은 이길 수 없다'는 말은 아마
+                저를 뜻하는 것 같습니다.
               </StA>
-              <StQ>그렇다면 왜 프론트엔드 개발을 선택하셨나요?</StQ>
+              <StQ>[ 혹시 인생에서 힘들었지만 극복한 경험이 있으신가요? ]</StQ>
               <StA>
-                앞서 말씀드렸다시피, 저는 제가 만든 코드가 바로바로 눈에 보이는
-                것이 재밌었습니다.
-                <br /> 더 나아가, 내가 이러한 기능을 만들어 유저가 사용하게
-                된다면? 나의 코드로 사람들의 삶에 더 편리함을 줄 수 있다면?
-                이라는 생각을 가지게 되었고,
-                <br /> 그 생각이 프론트엔드 개발자의 꿈으로 저를 닿게 해
-                주었습니다.
+                예전 스페인으로 교환학생을 간 적이 있었습니다. 하지만 제
+                전공과목은 영어로 지원이 안 되어 스페인어로 밖에 들을 수 없었고
+                제 서투른 스페인어로는 수업을 따라잡기가 너무 어려웠습니다.
+                <br /> 그래서 매 수업이 끝나고 교수님들을 찾아가 질문했던 기억이
+                있습니다. 그 당시엔 너무 힘들었지만, 교수님들께서 그런 제 모습을
+                좋게 봐주시고 주말에 따로 영어로 개인과외를 해주셨던 기억도
+                있습니다.
+                <br />
+                너무 힘들었지만 극복하고 학점까지 받은 저 자신이 너무 뿌듯했던
+                경험이 있습니다.
               </StA>
-              <StQ>개발을 배우면서 힘든적은 없었나요?</StQ>
-              <StA>
-                처음엔 맨땅에 헤딩을 하며 막막했을 때도 있었습니다. 하지만
-                코딩이 너무 재밌었고, 빠른 습득력으로 하나하나 놓치지 않고 모두
-                제것으로 만들려고 노력했습니다.
-                <br /> 그렇게 부트캠프 진행 중 제로베이스에서 과제 제출을
-                1등으로 하는 사람이 되었고, div도 모르던 제가 코드를 40,000줄을
-                짜는 프론트엔드 리더가 되어 있었습니다.
-              </StA>
-              <StQ>앞으로의 계획이 있다면?</StQ>
+              <StQ>[ 앞으로 어떤 개발자가 되고 싶은가요? ]</StQ>
               <StA>
                 저는 앞으로 성실한 개발자가 되는 것이 꿈입니다. 성실함은 항상
-                결과물로 나타나더라고요?(웃음)
+                결과물로 나타나는 것 같습니다.
                 <br /> 또한 즐기는 자를 이길 수는 없다고 생각합니다. 코딩이
                 즐겁고, 매 순간 성실한 모습으로 성장하는 그런 개발자가 되고
                 싶습니다.
@@ -166,12 +183,13 @@ const StNav = styled.div`
   height: 8.5em;
   display: flex;
   justify-content: space-between;
-  line-height: 7em;
+  line-height: 8.5em;
 `;
 
 const StNews = styled.div`
-  font-size: 70px;
+  font-size: 85px;
   color: #2e3840;
+  font-family: "Lora", serif;
 `;
 
 const StLine = styled.div`
@@ -190,6 +208,7 @@ const StDate = styled.div`
   margin-right: 1em;
   margin-left: 1em;
   cursor: pointer;
+  font-family: "Noto Sans KR", sans-serif;
 `;
 
 const StSlide = styled.div`
@@ -199,6 +218,7 @@ const StSlide = styled.div`
   margin-left: 1em;
   cursor: pointer;
   display: flex;
+  font-family: "Noto Sans KR", sans-serif;
 `;
 
 const StNotice = styled.div`
@@ -208,18 +228,20 @@ const StNotice = styled.div`
 `;
 
 const StBody = styled.div`
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   margin-bottom: 4em;
 `;
 
 const StTitle = styled.div`
-  font-size: 25px;
-  font-weight: 900;
-  border-bottom: 2px solid black;
-  height: 3em;
-  text-align: center;
-  margin-top: 2em;
+  font-size: 43px;
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+  color: #2e3840;
+  font-family: "Hahmlet", serif;
+  text-align: justify;
+  word-spacing: 2px;
+  letter-spacing: 1px;
 `;
 
 const StWriter = styled.div`
@@ -239,17 +261,22 @@ const StPhoto = styled.img`
 const StSection = styled.div`
   width: 100%;
   display: flex;
-  flex-direction: column;
-  margin-top: 2em;
+  gap: 2%;
 `;
 
 const StMainImg = styled.img`
-  width: 60%;
+  width: 100%;
   margin: 0 auto;
+  /* border: 2px solid gray;
+  border-radius: 10px; */
+`;
+
+const StBox = styled.div`
+  width: 45%;
 `;
 
 const StContent = styled.div`
-  margin-top: 2em;
+  width: 55%;
 `;
 
 const StContents = styled.div`
@@ -257,13 +284,15 @@ const StContents = styled.div`
 `;
 
 const StQ = styled.div`
-  font-size: 15px;
-  font-weight: 800;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Noto Sans KR", sans-serif;
 `;
 
 const StA = styled.div`
-  font-size: 14px;
+  font-size: 17px;
   margin-bottom: 15px;
+  font-family: "Noto Sans KR", sans-serif;
 `;
 
 const StFooter = styled.div`
